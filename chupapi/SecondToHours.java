@@ -11,14 +11,16 @@ import java.util.Scanner;
 public class SecondToHours
 {
     public static void main(String[]arg)
-    {
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter any second:");
-        int num1=sc.nextInt();
+   {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter total seconds");
+        int totalSeconds = sc.nextInt();
         
-        int second=num1*1;
-        int minutes=num1/60;
-        int hours=num1/3600;
-        System.out.println("Second="+second+"\nMinutes="+minutes+"\nHours="+hours);
+        int hours = totalSeconds / 3600;
+        int remainingSeconds = totalSeconds % 3600;
+        int minutes = remainingSeconds / 60;
+        int seconds = remainingSeconds % 60;
+        System.out.println("Hours"+hours+"\nMinutes"+minutes+"\nsecond"+seconds);
+
     }
 }
