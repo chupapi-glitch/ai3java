@@ -1,17 +1,18 @@
+package chupapi;
 import java.util.Scanner;
 
+
 /**
- * Write a description of class calculatorClass here.
+ * Write a description of class MathOperations here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class calculatorClass
+public class MathOperations
 {
     public static void main(String[]arg)
     {
         Scanner sc=new Scanner(System.in);
-        
         System.out.print("Enter first number:");
         int num1=sc.nextInt();
 
@@ -22,11 +23,12 @@ public class calculatorClass
         int subtraction=num1-num2;
         int product=num1*num2;
         int divide=num1/num2;
-        System.out.println("Sum:"+sum);
+        int modulus=num1%num2;
+        
+        System.out.println("sum:"+sum);
         System.out.println("subtraction:"+subtraction);
         System.out.println("Product:"+product);
         System.out.println("divide"+divide);
-        
-        sc.close();
+        System.out.println("modulus"+modulus);
     }
 }
