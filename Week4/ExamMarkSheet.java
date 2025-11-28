@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class ExamMarkSheet
+public class ExamMarkSheet extends GPAtoGrade
 
 {
     public static void main(String[]arg)
